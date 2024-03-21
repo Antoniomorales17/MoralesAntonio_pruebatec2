@@ -1,0 +1,52 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+body{
+    background:#FAFAFA;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* Cambiar el color de las letras a blanco */
+.navbar-light .navbar-nav .nav-link {
+    color: #17202A /* Color blanco */
+}
+
+/* Cambiar el color de las letras */
+p.lead,
+a.btn.btn-warning.btn-lg {
+    color: #17202A /* Color blanco para párrafos y enlaces */
+}
+
+/* Cambiar el color del título h1.display-4 a amarillo */
+h1.display-4 {
+    color: #fcd34d; /* Color amarillo */
+}
+
+/* Estilos para el formulario */
+.container-md .form-control {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(40, 40, 40);
+}
+
+.bg-yellow-400 {
+    background-color: #fcd34d /* Amarillo Tailwind */
+}
+
+
+
+
