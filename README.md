@@ -33,4 +33,9 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 🔵 Una vez eliminada una cita, ese hueco queda libre para otros clientes
 
 ### Interfaz de usuario
+🔵 Se busque una experiencia limpia y agradable.Basando el diseño en la UX para uan intereaccion intuitiva y dinámica
+
+🔵 Landing page clara con sus repectivas pestañas en el Navbar.Tabla de usuarios y citas sencilla mostrando los estados en cada caso
+
+🔵 Se han creado rutas de éxito y error en cada caso para notificar correctamente al usuario.
 
