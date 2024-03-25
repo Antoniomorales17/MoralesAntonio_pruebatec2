@@ -9,6 +9,7 @@
 <%@include file="componentes/header.jsp"%>
 <%@include file="componentes/main.jsp"%>
 
+
 <%@include file="componentes/footer.jsp"%> 
     
 </body>

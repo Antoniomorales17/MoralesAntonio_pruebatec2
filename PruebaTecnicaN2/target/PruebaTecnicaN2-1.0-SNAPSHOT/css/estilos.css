@@ -1,51 +1,38 @@
 *{
     font-family: "Poppins", sans-serif;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
+    
 }
 
-body{
-    background:#FAFAFA;
-    color: white;
-    overflow: hidden;
-    overflow-y: scroll;
+
+
+/* Estilo personalizado para el enlace de navegación */
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Espacio entre elementos */
 }
 
-/* Cambiar el color de las letras a blanco */
-.navbar-light .navbar-nav .nav-link {
-    color: #17202A /* Color blanco */
+.navbar-nav .nav-link {
+    color: #3fbac6; /* Color del texto */
+    transition: color 0.3s; /* Transición suave del color */
 }
 
-/* Cambiar el color de las letras */
-p.lead,
-a.btn.btn-warning.btn-lg {
-    color: #17202A /* Color blanco para párrafos y enlaces */
+/* Efecto hover */
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Cambia el color a blanco al pasar el mouse */
 }
 
-/* Cambiar el color del título h1.display-4 a amarillo */
-h1.display-4 {
-    color: #fcd34d; /* Color amarillo */
+.btn-custom {
+    background-color: #3fbac6;
+    border-color: #3fbac6;
+    color: #ffffff; /* Cambia el color del texto a blanco */
 }
 
-/* Estilos para el formulario */
-.container-md .form-control {
-    font-size: medium;
-    width: 100%;
-    max-width: 40rem;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: rgb(40, 40, 40);
+.btn-custom:hover {
+    background-color: #3fbac6; /* Mantén el mismo color de fondo */
+    color: #ffffff; /* Cambia el color del texto a blanco */
 }
 
-.bg-yellow-400 {
-    background-color: #fcd34d /* Amarillo Tailwind */
-}
+
+
 
 
 

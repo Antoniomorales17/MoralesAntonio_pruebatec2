@@ -1,6 +1,5 @@
-hackaboss\pruebatecnican2\resources\JakartaEE8Resource.class
 logica\Ciudadano.class
-logica\Turno.class
-logica\Logica.class
 hackaboss\pruebatecnican2\JakartaRestConfiguration.class
+hackaboss\pruebatecnican2\resources\JakartaEE8Resource.class
+logica\Turno.class
 persistencia\ControladoraPersistencia.class

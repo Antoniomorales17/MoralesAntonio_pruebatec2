@@ -3,6 +3,7 @@ package logica;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -132,5 +133,21 @@ public class Controladora {
     }
     
     
+    
+    //Nuevos metodos
+    public List<Turno> filtrarPorNombre(List<Turno> turnos, String nombre) {
+    return turnos.stream()
+            .filter(t -> t.getUnCiudadano().getNombre().equalsIgnoreCase(nombre))
+            .collect(Collectors.toList());
+}
+
+public List<Turno> filtrarPorId(List<Turno> turnos, int id) {
+    return turnos.stream()
+            .filter(t -> t.getUnCiudadano().getIdCiudadano() == id)
+            .collect(Collectors.toList());
+}
+
+ 
+
     
 }

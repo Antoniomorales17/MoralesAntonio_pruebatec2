@@ -1,8 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <footer>
-    <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-bottom d-flex justify-content-center align-items-center" style="height:4rem; background-color: #dd1376;">
-        <p class="mb-0">Hecho con <span><i class="fa-solid fa-heart" style="color: #d92665;"></i></span> y <span><i class="fa-solid fa-mug-hot" style="color: #511f48;"></i></span> por Antonio Morales</p>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-bottom d-flex justify-content-center align-items-center" style="height: 4rem; background-color: #3fbac6;">
+        <p class="mb-0 text-light">tuCita.com <span><i class="fa-solid fa-heart"></i></span> </i></span> PruebaTécnica2/Hackaboss-Softeck</p>
     </nav>
 </footer>
 

@@ -5,39 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- No olvides incluir Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+     
+    <style>
+        /* Define el color de fondo personalizado */
+        .bg-custom-blue {
+            background-color: #3fbac6;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar sticky top-0 navbar-light bg-yellow-400">
-            <div class="container mx-auto">
+        <!-- Aplica la clase para el color de fondo personalizado -->
+        <nav class="navbar sticky top-0 bg-custom-blue">
+            <div class="container mx-auto flex justify-between items-center py-4">
                 <a class="navbar-brand" href="index.jsp">
-                   <img src="assets/bici.png" alt="RapidBookings" style="max-height: 40px; max-width: 200px;">
-
-
+                    <img src="assets/logo3.png" alt="RapidBookings" style="max-height: 40px; max-width: 200px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Turno
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="altaCiudadano.jsp">Pedir Turno</a></li>
-                                <li><a class="dropdown-item" href="mostrarTurnos.jsp">Mostrar Turnos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Elementos de navegación -->
+                <ul class="flex items-center space-x-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="altaCiudadano.jsp">Pedir Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="mostrarTurnos.jsp">Mostrar Citas</a>
+                    </li>
+                    
+                </ul>
             </div>
         </nav>
     </header>
