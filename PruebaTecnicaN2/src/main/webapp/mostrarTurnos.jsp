@@ -6,16 +6,40 @@
 <!DOCTYPE html>
 <html  lang="es">
     <%@include file="componentes/head.jsp"%>
+    <style>
+
+        .table th,
+        .table td {
+            padding: 10px;
+        }
+
+        .table thead th {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .table tbody td {
+            background-color: #f0f0f0;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #d0d0d0;
+        }
+    </style>
     <body>
         <%@include file="componentes/header.jsp"%>
         <section>
-            <!-- Tabla de resultados -->
+
             <div class="container mt-5 shadow p-3 mb-5 bg-body rounded">
 
-                 <h4 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Citas</h4>
-                 <p class="lead mb-4">Puede filtrar los turnos según su fecha y estado:</p>
+                <h4 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Citas</h4>
+                <p class="lead mb-4">Puede filtrar las citas según su fecha y estado:</p>
 
-                <!-- Formulario para seleccionar la fecha -->
+
                 <form action="SvTurno" method="GET" class="mb-3">
                     <div class="container mt-3">
                         <div class="d-flex align-items-center gap-2 justify-content-around">
@@ -41,23 +65,23 @@
 
             <!-- Tabla de Turnos -->
             <div class="container mt-5 shadow p-3 mb-5 bg-body rounded">
-    <h5 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Lista de Citas</h5>
-    <table class="table table-bordered rounded table-striped" style="background-color: #9CDBF2;">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Turno</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>            
-                <th scope="col">DNI</th>
-                <th scope="col">Trámite</th>
-                <th scope="col">Estado</th>
-                <th scope="col">Cancelar</th>
-            </tr>
-        </thead>
+                <h5 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Lista de Citas</h5>
+                <table class="table table-bordered rounded table-striped" style="background-color: #9CDBF2;">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Turno</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>            
+                            <th scope="col">DNI</th>
+                            <th scope="col">Trámite</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Cancelar</th>
+                        </tr>
+                    </thead>
 
                     <%List<Turno> listaTurnos = (List) request.getSession().getAttribute("listaTurnos");%>
-                    
+
                     <% if (listaTurnos != null && !listaTurnos.isEmpty()) { %>
                     <tbody>
                         <% SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); %>
@@ -72,8 +96,8 @@
                             <td>
                                 <form action="SvEditTurno" method="POST" class="d-inline">
                                     <input type="hidden" name="idTurno" value="<%=turno.getIdTurno()%>">
-                                    <button class="btn btn-warning btn-sm" type="submit" >
-                                        <%=turno.getEstado()%> <i class="fa-solid fa-pencil"></i>
+                                    <button class="btn btn-warning btn-sm" type="submit">
+                                        <%=turno.getEstado()%> <img src="assets/edit.png" alt="Editar" width="16" height="16" style="margin-left: 20px;">
                                     </button>
                                 </form>
                             </td>
@@ -81,10 +105,11 @@
                                 <form action="SvElimTurno" method="POST" id="eliminarTurnoForm">
                                     <input type="hidden" name="idTurn" id="idTurn" value="<%=turno.getIdTurno()%>">
                                     <button type="submit" class="btn btn-danger btn-sm">
-                                        Eliminar <i class="fa-solid fa-trash"></i>
+                                        Eliminar <img src="assets/delete.png" alt="Eliminar" width="16" height="16" style="margin-left: 20px;">
                                     </button>
                                 </form>
                             </td>
+
                         </tr> 
                         <%}%>
                     </tbody>

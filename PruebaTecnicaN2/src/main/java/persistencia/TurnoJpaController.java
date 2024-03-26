@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package persistencia;
 
 import java.io.Serializable;
@@ -17,20 +13,16 @@ import logica.Ciudadano;
 import logica.Turno;
 import persistencia.exceptions.NonexistentEntityException;
 
-/**
- *
- * @author Nono
- */
 public class TurnoJpaController implements Serializable {
 
     public TurnoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-    
-     public TurnoJpaController() {
+
+    public TurnoJpaController() {
         emf = Persistence.createEntityManagerFactory("entidadPU");
     }
-    
+
     private EntityManagerFactory emf = null;
 
     public EntityManager getEntityManager() {
@@ -169,5 +161,5 @@ public class TurnoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

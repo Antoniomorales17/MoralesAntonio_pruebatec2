@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package persistencia;
 
 import java.io.Serializable;
@@ -18,20 +14,16 @@ import javax.persistence.Persistence;
 import logica.Ciudadano;
 import persistencia.exceptions.NonexistentEntityException;
 
-/**
- *
- * @author Nono
- */
 public class CiudadanoJpaController implements Serializable {
 
     public CiudadanoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-    
+
     public CiudadanoJpaController() {
         emf = Persistence.createEntityManagerFactory("entidadPU");
     }
-    
+
     private EntityManagerFactory emf = null;
 
     public EntityManager getEntityManager() {
@@ -191,5 +183,5 @@ public class CiudadanoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

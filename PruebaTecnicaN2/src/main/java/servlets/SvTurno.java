@@ -1,8 +1,6 @@
-
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -15,15 +13,12 @@ import logica.Ciudadano;
 import logica.Controladora;
 import logica.Turno;
 
-
 @WebServlet(name = "SvTurno", urlPatterns = {"/SvTurno"})
 public class SvTurno extends HttpServlet {
-    
+
     Controladora control = new Controladora();
 
-    
-  
-   protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
     }
@@ -33,13 +28,10 @@ public class SvTurno extends HttpServlet {
             throws ServletException, IOException {
 
         List<Turno> listaTurnos = control.traerTurnos();
-        
 
-        // Filtros de turnos
         if (listaTurnos != null) {
             String fechaInput = request.getParameter("inputDate");
             String estado = request.getParameter("estado");
-            
 
             if (fechaInput != null && !fechaInput.isEmpty()) {
                 Date fecha = control.formatearFecha(fechaInput);
@@ -53,7 +45,7 @@ public class SvTurno extends HttpServlet {
                 }
             }
         }
-          // Ordenar los turnos por ID
+        // Ordenar los turnos por ID
         control.ordernarTurnos(listaTurnos);
 
         HttpSession miSession = request.getSession();
@@ -89,14 +81,14 @@ public class SvTurno extends HttpServlet {
 
                     response.sendRedirect("confirmacion.jsp");
                 } else {
-                    response.sendRedirect("404.jsp");
+                    response.sendRedirect("datosInvalidos.jsp");
                 }
             }
         } catch (IOException e) {
             System.out.println("Se ha producido un error en la creacion del turno" + e);
-            response.sendRedirect("404.jsp");
+            response.sendRedirect("datosInvalidos.jsp");
         } finally {
-            miSession.invalidate();// Limpiar sesión
+            miSession.invalidate();
         }
 
     }
@@ -104,6 +96,6 @@ public class SvTurno extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

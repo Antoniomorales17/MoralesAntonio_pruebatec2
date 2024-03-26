@@ -5,8 +5,8 @@
         <%@include file="componentes/header.jsp"%>
         <section class="m-5">
             <div class="container-md shadow p-3 mb-5 bg-body rounded" >
-               <h3 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Sacar Cita</h3>
-               <p class="lead mb-4">Selecione el dia del turno y el tipo de trámite que desea realizar.</p>
+                <h3 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Sacar Cita</h3>
+                <p class="lead mb-4">Selecione el dia del turno y el tipo de trámite que desea realizar.</p>
                 <form action="SvTurno" method="POST" class="row g-3">
                     <div class="col-md-6">
                         <label for="inputDate" class="form-label">Fecha Turno</label>
@@ -28,7 +28,7 @@
                             <option value="Salud">Salud</option>
                             <option value="Servicios Sociales">Servicios Sociales</option>
                             <option value="Urbanismo y Vivienda">Urbanismo y Vivienda</option>
-                             <option value="Extranjeria">Extranjeria</option>
+                            <option value="Extranjeria">Extranjeria</option>
                         </select>
                     </div>
                     <div class="col-12">
@@ -36,7 +36,7 @@
                     </div>
                 </form>
 
-                <!-- Alerta de éxito oculta inicialmente -->
+
                 <div id="successAlert" class="alert alert-success" style="display: none;">
                     ¡Reserva realizada con éxito!
                 </div>

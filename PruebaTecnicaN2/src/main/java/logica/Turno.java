@@ -1,4 +1,3 @@
-
 package logica;
 
 import java.io.Serializable;
@@ -14,15 +13,16 @@ import javax.persistence.TemporalType;
 
 @Entity
 public class Turno implements Serializable {
-     @Id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int idTurno;
-     
+
     @Temporal(TemporalType.DATE)
     private Date fecha;
     private String tramite;
     private String estado;
-    
+
     @ManyToOne
     @JoinColumn(name = "idCiuda")
     private Ciudadano unCiudadano;
@@ -77,8 +77,5 @@ public class Turno implements Serializable {
     public void setUnCiudadano(Ciudadano unCiudadano) {
         this.unCiudadano = unCiudadano;
     }
-    
-    
-    
-    
+
 }

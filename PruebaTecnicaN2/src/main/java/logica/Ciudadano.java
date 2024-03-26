@@ -1,4 +1,3 @@
-
 package logica;
 
 import java.io.Serializable;
@@ -9,21 +8,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
 @Entity
 public class Ciudadano implements Serializable {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE)
-    
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+
     private int idCiudadano;
     private String nombre;
     private String apellido;
     private String dni;
     private String telefono;
-    
-    @OneToMany(mappedBy="unCiudadano")
+
+    @OneToMany(mappedBy = "unCiudadano")
     private List<Turno> turnos;
-    
 
     public Ciudadano() {
     }
@@ -83,7 +81,5 @@ public class Ciudadano implements Serializable {
     public void setTurnos(List<Turno> turnos) {
         this.turnos = turnos;
     }
-    
-    
-    
+
 }

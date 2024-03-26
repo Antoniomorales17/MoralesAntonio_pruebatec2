@@ -1,34 +1,31 @@
 *{
     font-family: "Poppins", sans-serif;
-    
+
 }
 
-
-
-/* Estilo personalizado para el enlace de navegación */
 .navbar-nav .nav-item {
-    margin-right: 10px; /* Espacio entre elementos */
+    margin-right: 10px;
 }
 
 .navbar-nav .nav-link {
-    color: #3fbac6; /* Color del texto */
-    transition: color 0.3s; /* Transición suave del color */
+    color: #3fbac6;
+    transition: color 0.3s;
 }
 
-/* Efecto hover */
+
 .navbar-nav .nav-link:hover {
-    color: #ffffff; /* Cambia el color a blanco al pasar el mouse */
+    color: #ffffff;
 }
 
 .btn-custom {
     background-color: #3fbac6;
     border-color: #3fbac6;
-    color: #ffffff; /* Cambia el color del texto a blanco */
+    color: #ffffff;
 }
 
 .btn-custom:hover {
-    background-color: #3fbac6; /* Mantén el mismo color de fondo */
-    color: #ffffff; /* Cambia el color del texto a blanco */
+    background-color: #3fbac6;
+    color: #ffffff;
 }
 
 

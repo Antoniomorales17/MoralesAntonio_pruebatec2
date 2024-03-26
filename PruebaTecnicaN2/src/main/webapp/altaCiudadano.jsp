@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <%@include file="componentes/head.jsp"%>
-    
+
     <body>
         <%@include file="componentes/header.jsp"%>
         <section class="p-5">
-            <!-- Form Alta del Ciudadano-->
+
             <div class="container-md shadow p-3 mb-5 bg-body rounded" style="background-color: #e3f2fd;">
-               <h3 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Formulario para Sacar Cita</h3>
+                <h3 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl">Formulario para Sacar Cita</h3>
                 <p class="lead mb-4">Para obtener una cita se deben introducir los datos de la persona que va a reservar la cita. Todos los campos son obligatorios.</p>
                 <form action="SvCiudadano" method="POST" class="row g-3" accept-charset="ISO-8859-1" style="font-family: 'Poppins', sans-serif;">
                     <div class="col-md-6">
