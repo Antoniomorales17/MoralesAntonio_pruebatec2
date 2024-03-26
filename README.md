@@ -6,26 +6,26 @@
 
 Se trata de una aplicación que permite a los usuarios pedir y gestionar sus citas con la administración. Puedes seleccionar la modalidad, registrar la hora en el calendario y editar el estado entre "En espera" y "Atendido"
 
-### Modelado de clases
+## Modelado de clases
 
 ![modelado](https://i.imgur.com/ycue4rF.png)
 
-### Funciones generales
+## Funciones generales
 
 La aplicación permite hacer el recorrido de un CRUD completo :
 
-#### Registro de usuario
+### Registro de usuario
 
 🔵 Los usarios deben de ingresar su nombre, apellido, Dni y telefono para iniciar el proceso de selección
 
 🔵 Se validan los datos para que sean correctos. Se muestra pantalla de éxito si todo ha salido y una pantalla de error en caso contrario.
 
-#### Reserva de la cita
+### Reserva de la cita
 🔵 Los usuarios pueden seleccionar en el calendario la fecha y horario disponibles
 
 🔵 Se selecciona el tipo de trámite que requieran resolver 
 
-#### Visualizacion de las citas
+### Visualizacion de las citas
 ![vistaCitas](https://i.imgur.com/vWwG6Z1.png)
 
 🔵 Los usuarios tienen acceso a un registro de los turnos que han sido reservados.
@@ -34,7 +34,7 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 
 🔵 Además, se les ofrece la opción de aplicar filtros de estado, lo que les permite identificar los turnos en espera o aquellos que ya han sido atendidos
 
-#### Cancelar cita
+### Cancelar cita
 
 🔵 Se añade la posibilidad de cancelar una cita
 
@@ -50,7 +50,7 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 
 ### Tecnologías
 
-🔵
+🔵 La aplicación se ha diseñado con un enfoque en tecnologías web estándar, aprovechando la potencia de Java para manejar la lógica del servidor y JSP (JavaServer Pages) para la generación dinámica de vistas.
 
 🔵 Para obtener un resultado eficiente se han implementado estilos de Boopstrap, Tailwind y Css puro para optimizar el diseño.
 
