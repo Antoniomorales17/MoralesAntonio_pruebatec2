@@ -3,9 +3,11 @@
 ## Prueba Técnica Avanzado / Hack A Boss / Softeck
 
 ![landing](https://i.imgur.com/zXuGUej.png)
+
 Se trata de una aplicacion que permite a los usuarios pedir y gestionar sus citas con la administriación. Puedes seleccioanr la modalidad, registrar la hora en el calendario y editar el estado entre "En espera" y "Atendido"
 
 ### Modelado de clases
+
 ![modelado](https://i.imgur.com/ycue4rF.png)
 
 ### Funciones generales
@@ -22,6 +24,8 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 🔵 Se selecciona el tipo de tramite que requieran resolver 
 
 #### Visualizacion de las citas
+![vistaCitas](https://i.imgur.com/vWwG6Z1.png)
+
 🔵 Los usuarios tienen acceso a un registro de los turnos que han sido reservados.
 
 🔵 Tienen la capacidad de filtrar los turnos según la fecha, lo que les permite visualizar aquellos programados para un día en particular.
