@@ -14,19 +14,19 @@ Se trata de una aplicación que permite a los usuarios pedir y gestionar sus cit
 
 La aplicación permite hacer el recorrido de un CRUD completo :
 
-### Registro de usuario
+#### Registro de usuario
 
 🔵 Los usarios deben de ingresar su nombre, apellido, Dni y telefono para iniciar el proceso de selección
 
 🔵 Se validan los datos para que sean correctos. Se muestra pantalla de éxito si todo ha salido y una pantalla de error en caso contrario.
 
-### Reserva de la cita
+#### Reserva de la cita
 
 🔵 Los usuarios pueden seleccionar en el calendario la fecha y horario disponibles
 
 🔵 Se selecciona el tipo de trámite que requieran resolver 
 
-### Visualizacion de las citas
+#### Visualizacion de las citas
 
 ![vistaCitas](https://i.imgur.com/vWwG6Z1.png)
 
@@ -36,13 +36,13 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 
 🔵 Además, se les ofrece la opción de aplicar filtros de estado, lo que les permite identificar los turnos en espera o aquellos que ya han sido atendidos
 
-### Cancelar cita
+#### Cancelar cita
 
 🔵 Se añade la posibilidad de cancelar una cita
 
 🔵 Una vez eliminada una cita, ese hueco queda libre para otros clientes
 
-### Interfaz de usuario
+#### Interfaz de usuario
 
 🔵 Se busque una experiencia limpia y agradable. Basando el diseño en la UX para una intereaccion intuitiva y dinámica
 
