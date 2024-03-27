@@ -16,33 +16,33 @@ La aplicación permite hacer el recorrido de un CRUD completo :
 
 #### Registro de usuario
 
-🔵 Los usarios deben de ingresar su nombre, apellido, Dni y telefono para iniciar el proceso de selección
+✅ Los usarios deben de ingresar su nombre, apellido, Dni y telefono para iniciar el proceso de selección
 
-🔵 Se validan los datos para que sean correctos. Se muestra pantalla de éxito si todo ha salido y una pantalla de error en caso contrario.
+✅ Se validan los datos para que sean correctos. Se muestra pantalla de éxito si todo ha salido y una pantalla de error en caso contrario.
 
 #### Reserva de la cita
 
-🔵 Los usuarios pueden seleccionar en el calendario la fecha y horario disponibles
+✅ Los usuarios pueden seleccionar en el calendario la fecha y horario disponibles
 
-🔵 Se selecciona el tipo de trámite que requieran resolver 
+✅ Se selecciona el tipo de trámite que requieran resolver 
 
 #### Visualizacion de las citas
 
 ![vistaCitas](https://i.imgur.com/vWwG6Z1.png)
 
-🔵 Los usuarios tienen acceso a un registro de los turnos que han sido reservados.
+✅ Los usuarios tienen acceso a un registro de los turnos que han sido reservados.
 
-🔵 Tienen la capacidad de filtrar los turnos según la fecha, lo que les permite visualizar aquellos programados para un día en particular.
+✅ Tienen la capacidad de filtrar los turnos según la fecha, lo que les permite visualizar aquellos programados para un día en particular.
 
-🔵 Además, se les ofrece la opción de aplicar filtros de estado, lo que les permite identificar los turnos en espera o aquellos que ya han sido atendidos
+✅ Además, se les ofrece la opción de aplicar filtros de estado, lo que les permite identificar los turnos en espera o aquellos que ya han sido atendidos
 
 #### Cancelar cita
 
-🔵 Se añade la posibilidad de cancelar una cita
+✅ Se añade la posibilidad de cancelar una cita
 
-🔵 Una vez eliminada una cita, ese hueco queda libre para otros clientes
+✅ Una vez eliminada una cita, ese hueco queda libre para otros clientes
 
-#### Interfaz de usuario
+### Interfaz de usuario
 
 🔵 Se busque una experiencia limpia y agradable. Basando el diseño en la UX para una intereaccion intuitiva y dinámica
 
