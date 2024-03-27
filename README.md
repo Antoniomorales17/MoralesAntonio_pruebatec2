@@ -6,6 +6,16 @@
 
 Se trata de una aplicación que permite a los usuarios pedir y gestionar sus citas con la administración. Puedes seleccionar la modalidad, registrar la hora en el calendario y editar el estado entre "En espera" y "Atendido"
 
+## Pre-requisitos 🧾
+
+⚫ Java 17 o superior
+
+⚫ IDE compatible con Java 17 o superior
+
+⚫ Un gestor de bases de datos compatible con MySQL
+
+⚫ Un contenedor de servlet como Apache Tomcat para desplegar el proyecto web
+
 ## Modelado de clases
 
 ![modelado](https://i.imgur.com/ycue4rF.png)
