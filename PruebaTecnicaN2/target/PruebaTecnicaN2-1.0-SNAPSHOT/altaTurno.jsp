@@ -17,6 +17,9 @@
                         <select id="tipoTramite" name="tipoTramite" class="form-select" required>
                             <option selected disabled>Elija un trámite...</option>
                             <option value="Consumo">Consumo</option>
+                            <option value="Transporte y Tráfico">Transporte y Tráfico</option>
+                            <option value="Finanzas y Impuestos">Finanzas y Impuestos</option>
+                            <option value="Infraestructura y Obras Públicas">Infraestructura y Obras Públicas</option>
                             <option value="Contribuyente">Contribuyente</option>
                             <option value="Cultura">Cultura</option>
                             <option value="Empleo">Empleo</option>
@@ -35,11 +38,7 @@
                         <button type="submit" class="btn btn-warning btn-lg " style="background-color: #3fbac6;">Guardar Turno</button>
                     </div>
                 </form>
-
-
-                <div id="successAlert" class="alert alert-success" style="display: none;">
-                    ¡Reserva realizada con éxito!
-                </div>
+              
             </div>
         </section>
         <%@include file="componentes/footer.jsp"%> 

@@ -47,7 +47,9 @@
     <body>
         <div class="container">
             <h1>Lo sentimos</h1>
-            <p>Debe rellenar los datos de forma correcta.</p>
+            <h3>Debe rellenar los datos de forma correcta.</h3>
+            <p>El DNI debe contener exactamente 8 dígitos (Numéricos)</p>
+            <p>El teléfono debe contener exactamente 9 dígitos (Numéricos)</p>
             <a href="altaCiudadano.jsp" class="btn">Volver a la página de alta de ciudadano</a>
         </div>
     </body>
