@@ -8,13 +8,13 @@ Se trata de una aplicación que permite a los usuarios pedir y gestionar sus cit
 
 ## Pre-requisitos 🧾
 
-⚫ Java 17 o superior
+🔴 Java 17 o superior
 
-⚫ IDE compatible con Java 17 o superior
+🔴 IDE compatible con Java 17 o superior
 
-⚫ Un gestor de bases de datos compatible con MySQL
+🔴 Un gestor de bases de datos compatible con MySQL
 
-⚫ Un contenedor de servlet como Apache Tomcat para desplegar el proyecto web
+🔴 Un contenedor de servlet como Apache Tomcat para desplegar el proyecto web
 
 ## Modelado de clases
 
