@@ -16,6 +16,8 @@ Se trata de una aplicación que permite a los usuarios pedir y gestionar sus cit
 
 🔴 Un contenedor de servlet como Apache Tomcat para desplegar el proyecto web
 
+⚠ La base de datos se encuentras en sources con el nombre : turnero
+
 ## Modelado de clases
 
 ![modelado](https://i.imgur.com/ycue4rF.png)
